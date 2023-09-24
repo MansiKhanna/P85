@@ -9,9 +9,7 @@ function getmenu()
         htmldata=htmldata+ menu_list_array[i] + '<br>'
     }
     //Give the appropriate id name as display_menu 
-    document.getElementById("pizza_name").innerHTML = htmldata;
-    var remove_commas = pizza_list_array.join("<br># ");
-    document.getElementById("display_menu").innerHTML =  "# " + remove_commas;
+    document.getElementById("display_menu").innerHTML = htmldata;
 }
 
 function add_suggestion(){
